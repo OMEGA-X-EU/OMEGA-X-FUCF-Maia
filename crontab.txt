@@ -5,9 +5,9 @@
 #
 # **NOTE:** All commands in this file are executed with root privileges.
 #
-# Managed by: [Your Name/Team Name]
-# Contact: [Your Email Address/Contact Information]
-# Last Updated: [YYYY-MM-DD]
+# Managed by: Pedro Pimenta
+# Contact: ppimenta@umaia.pt
+# Last Updated: 2025-05-05
 ###############################################################################
 
 

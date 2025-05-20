@@ -4,7 +4,8 @@ Date: October, 2024
 Description: This script processes electrical energy data and generates a turtle file
              representing event time series and energy datasets for a secondary substation (Maia PTT).
 Context: This script is part of the OMEGA-X project and handles the transformation of data from a CSV file into a turtle file
-         using the Omega-X Common Semantic data Model. Original code provided by Fatma Zohra HANNOU (fatma-zohra.hannou@edf.fr).
+         using the Omega-X Common Semantic data Model (https://github.com/OMEGA-X-EU/Omega-X-EDF). 
+         Original code provided by Fatma Zohra HANNOU (fatma-zohra.hannou@edf.fr).
 
 Updates:
 - May 2025 - edited for clarity
