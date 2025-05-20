@@ -1,0 +1,26 @@
+###############################################################################
+# sudo crontab for baze.cm-maia.pt
+# Description: This crontab manages system-level scheduled tasks for the baze system
+#              at Câmara Municipal da Maia (Maia Municipality).
+#
+# **NOTE:** All commands in this file are executed with root privileges.
+#
+# Managed by: [Your Name/Team Name]
+# Contact: [Your Email Address/Contact Information]
+# Last Updated: [YYYY-MM-DD]
+###############################################################################
+
+
+# Daily updates in the context of Omega-X project 
+
+# exports previous day of PTT - csv, ttl and zip formats
+1 1 * * * source "/home/ppimenta/d4maia/Data exposure/PTTorre/PTTLidador_daybefore.sh" &> ~ppimenta/log_PTTLidador_daybefore.txt 
+
+# exports Library internal temperature (three floors) and environmental meteorological conditions
+3 1 * * * source "/home/ppimenta/d4maia/Data exposure/Library/Bibliotv24_daybefore.sh" &> ~ppimenta/log_Bib24_and_meteo.txt
+
+# exports HVAC data (HVAC is exported as the whole series, not the 'previous day')
+5 1 * * * source "/home/ppimenta/d4maia/Data exposure/Library/Forum24.sh" &> ~ppimenta/log_Forum24.txt 
+
+# syncs and push new data to 
+30 1 * * * source "/home/ppimenta/d4maia/Data exposure/ghub_daybefore.sh" & > ~ppimenta/log_ghub_sync_push.txt
