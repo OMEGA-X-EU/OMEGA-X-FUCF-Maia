@@ -14,7 +14,7 @@ Is this pilot, Maia Municipality provides data from two different settings, viz:
 2. HVAC - HVAC and meteorological data from 'Forum' public library 
 	This dataset encompasses a three-stage library HVAC system (internal temperatures, relative humidity, heat pump operation) alongside environmental meteorological conditions such as temperature, relative humidity, and solar radiation.
 
-This repository shares a set of scripts (bash and python) that illustrates how the data was extracted from the data lake and made available to the Sovity data connector ([sovity.com](sovity.com)) used in the Omega-X project.
+This repository shares a set of scripts (bash and python) that illustrates how the data was extracted from the data lake and made available to the github working repository (and form there to the Sovity - [sovity.com](sovity.com)  data connector ) used in the Omega-X project.
 
 ## Data sources and database tables
 
@@ -22,10 +22,10 @@ The data originates from a diverse array of sensors, including: i) a meteorologi
 
 In line with the data lake architecture and data management practices, data, retaining its characteristic granularity, is stored in specific tables categorized by its data source family, as follows:
 
-1. Data from the secondary substation (PTT) is stored in `` (every 20 secs)
-2. Data from the meteorological station is stored in `baze21r` every 15 mins - for the sake of this study, we are considering tstamp, Temperature, solar radiation and relative humidity;
-3. Data from the HVAC system is stored in `itgest24` (every 3 mins) - 
-4. Data from the temperature / RH in the three floors of the Library is stored in `` (every )
+1. Data from the secondary substation (PTT) is stored in `PTTorre` (every 20 secs)
+2. Data from the meteorological station is stored in `baze21r` - for the sake of this study, we are considering tstamp, Temperature, solar radiation and relative humidity (every 15 mins);
+3. Data from the HVAC system is stored in `itgest24` (every 3 mins)
+4. Data from the temperature / RH in the three floors of the Library is stored in `FLora` (every 20 mins)
 
 ## Data extraction and github repository update
 

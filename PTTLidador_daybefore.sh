@@ -7,7 +7,7 @@
 # Execution Context: Designed to be run by the root user, typically via crontab.
 #
 # Managed by: Pedro Pimenta
-# Contact: ppimenta@cm-maia.pt / ppimenta@ipmaia.pt
+# Contact: ppimenta@umaia.pt
 # Last Updated: 2025-05-05
 ###############################################################################
 
