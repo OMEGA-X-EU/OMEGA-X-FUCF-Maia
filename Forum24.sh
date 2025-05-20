@@ -22,7 +22,7 @@ sql="use BAZE; select device, tstamp, valor_kWh as Consumption_kWh from itgest24
 
 echo $(date '+%Y-%m-%d %H:%M') $sql >> log_Forum24.txt	
 
-mysql  -uppimenta -ppim53enta -e"use BAZE; select device, tstamp, valor_kWh as Consumption_kWh from itgest24 where device like '%Ativa%' order by tstamp, device into outfile 'Forum24.csv_' FIELDS TERMINATED BY ','" 
+mysql  -uppimenta -p**password** -e"use BAZE; select device, tstamp, valor_kWh as Consumption_kWh from itgest24 where device like '%Ativa%' order by tstamp, device into outfile 'Forum24.csv_' FIELDS TERMINATED BY ','" 
 
 
 mv /var/lib/mysql/BAZE/Forum24.csv_ ./Forum.csv_
