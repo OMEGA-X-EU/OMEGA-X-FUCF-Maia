@@ -1,0 +1,1 @@
+device,tstamp,dstamp,CurrL1_A,CurrL2_A,CurrL3_A,ActPow_kW,AppPow_kVA,ReacPow_kvar,Energy_kWh,VolL1_V,VolL2_V,VolL3_V,THDUL1,THDUL2,THDUL3,THDIL1,THDIL2,THDIL3,cosphi

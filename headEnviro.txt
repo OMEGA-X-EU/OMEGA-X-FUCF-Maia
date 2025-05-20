@@ -1,0 +1,1 @@
+tstamp,Temperature_C,RH_PC,Rad_W_m2
